@@ -1,10 +1,9 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-const firebaseConfig = {
+export const firebaseConfig = {
   apiKey: "AIzaSyBMKSwXu8YPHd_7isKu7tQtes8IBau1fzo",
   authDomain: "carnet-zeller.firebaseapp.com",
   projectId: "carnet-zeller",
@@ -19,4 +18,4 @@ export const accounts = {
 }
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+export const attachmentsEnabled = false
