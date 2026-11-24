@@ -1,14 +1,17 @@
-// Paramètres publics de l'application Web Firebase, jamais de clé de compte de service.
-export const firebaseConfig = {
-  apiKey: 'À COMPLÉTER',
-  authDomain: 'À COMPLÉTER',
-  projectId: 'À COMPLÉTER',
-  storageBucket: 'À COMPLÉTER',
-  appId: 'À COMPLÉTER'
-}
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-export const accounts = {
-  thomas: { email: 'thomas@example.com', uid: 'UID_THOMAS' },
-  ami: { email: 'ami@example.com', uid: 'UID_AMI' }
-}
-export const attachmentsEnabled = false
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBMKSwXu8YPHd_7isKu7tQtes8IBau1fzo",
+  authDomain: "carnet-zeller.firebaseapp.com",
+  projectId: "carnet-zeller",
+  storageBucket: "carnet-zeller.firebasestorage.app",
+  messagingSenderId: "848747099822",
+  appId: "1:848747099822:web:4c97e347971fa8555cdf3f"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
