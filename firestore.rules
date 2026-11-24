@@ -2,7 +2,7 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
     function thomas() {
-      return request.auth != null && request.auth.uid == 'UID_THOMAS';
+      return request.auth != null && request.auth.uid == 'sHeCNehllyeRLcwrr0TN8tua5GK2';
     }
     function member() {
       return thomas() || (request.auth != null && request.auth.uid == 'UID_AMI');
