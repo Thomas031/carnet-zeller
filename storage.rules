@@ -1,0 +1,13 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /attachments/{id} {
+      function member() {
+        return request.auth != null && request.auth.uid in ['UID_THOMAS', 'UID_AMI'];
+      }
+      allow get: if member();
+      allow create: if member() && request.resource.size <= 20 * 1024 * 1024
+        && request.resource.contentType == 'application/octet-stream';
+    }
+  }
+}
