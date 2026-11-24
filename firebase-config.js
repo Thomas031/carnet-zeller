@@ -13,5 +13,10 @@ const firebaseConfig = {
   appId: "1:848747099822:web:4c97e347971fa8555cdf3f"
 };
 
+export const accounts = {
+  thomas: { email: 'thomasheitzroser@gmail.com', uid: 'sHeCNehllyeRLcwrr0TN8tua5GK2' },
+  ami: { email: 'email-du-deuxieme-compte', uid: 'UID-du-deuxieme-compte' }
+}
+
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
