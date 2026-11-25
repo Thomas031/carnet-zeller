@@ -14,7 +14,7 @@ export const firebaseConfig = {
 
 export const accounts = {
   thomas: { email: 'thomasheitzroser@gmail.com', uid: 'sHeCNehllyeRLcwrr0TN8tua5GK2' },
-  ami: { email: 'email-du-deuxieme-compte', uid: 'UID-du-deuxieme-compte' }
+  ami: { email: 'dark.angel.22.prod@gmail.com', uid: 'test' }
 }
 
 // Initialize Firebase
